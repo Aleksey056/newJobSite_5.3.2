@@ -25,7 +25,7 @@ export default function Header() {
 				</Box>
 				<Box className={styles.userInfo}>
 					<Image className={styles.userInfo__image} src={userLogo} alt='userLogo' />
-					<Text className={styles.userInfo__text}>Обо мне</Text>
+					<Link to='/about' className={styles.userInfo__text}>Обо мне</Link>
 				</Box>
 			</Box>
 		</Box>
