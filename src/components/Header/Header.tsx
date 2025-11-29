@@ -1,9 +1,9 @@
 import { Box, Text, Image } from '@mantine/core'
 import logo from '../../assets/logo_hh.svg'
 import userLogo from '../../assets/user-circle.svg'
-import ellipse from '../../assets/Ellipse.svg'
+// import ellipse from '../../assets/Ellipse.svg'
 import styles from './Header.module.css'
-import { Link, NavLink } from 'react-router'
+import { NavLink } from 'react-router'
 
 export default function Header() {
 
@@ -22,7 +22,7 @@ export default function Header() {
 					<NavLink to='/' className={styles.jobs__text}>
 						Вакансии FE
 					</NavLink>
-					{/* <Image className={styles.ellipse} src={ellipse} /> */}
+					<Image className={styles.ellipse} />
 				</Box>
 				<Box className={styles.userInfo}>
 					<Image className={styles.userInfo__image} src={userLogo} alt='userLogo' />

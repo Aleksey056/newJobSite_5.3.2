@@ -68,12 +68,14 @@
 .userInfo__text {
 	font-weight: 500;
 	font-size: 14px;
-	color: #0F0F1080
+	color: #0F0F1080;
+	text-decoration: none;
 }
 
-.active {
+.userInfo__text ::before {
 	background-image: url('../../assets/Ellipse.svg');
 	width: 6px;
 	height: 6px;
-	color: black;
+	color: rgb(203, 0, 0);
+	cursor: default;
 }
