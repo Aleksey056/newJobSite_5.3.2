@@ -9,7 +9,7 @@
 	text-decoration: none;
 }
 
-.header__logo {
+.header_logo {
 	display: flex;
 	position: fixed;
 	top: 15px;
@@ -25,57 +25,99 @@
 	height: 30px;
 }
 
-.text {
+.header__text {
 	font-weight: 600;
 }
 
-.block2 {
+
+
+
+
+
+
+
+
+.header_info {
 	display: flex;
 	gap: 24px;
 }
 
-.jobs {
-	display: flex;
+.vacancies {
+	text-decoration: none;
+	color: #0F0F1080;
 	align-items: center;
-	gap: 8px;
 }
 
-.jobs__text {
+.vacancies.text {
 	font-weight: 500;
 	color: black;
 	font-size: 14px;
-	text-decoration: none;
 }
 
-.ellipse {
+.vacanciesActive {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+}
+
+/* .vacanciesActive.text {} */
+
+.vacanciesActive::after {
+	content: '';
 	width: 6px;
 	height: 6px;
+	background-image: url('../../assets/Ellipse.svg');
+	background-repeat: no-repeat;
 }
 
-.userInfo {
+
+
+
+.about {
 	display: flex;
-	width: 88px;
 	height: 24px;
 	align-items: center;
 	gap: 5px;
+	text-decoration: none;
+	color: #0F0F1080;
 }
 
-.userInfo__image {
+.image {
 	width: 24px;
 	height: 24px;
 }
 
-.userInfo__text {
+.about.text {
 	font-weight: 500;
 	font-size: 14px;
 	color: #0F0F1080;
 	text-decoration: none;
 }
 
-.userInfo__text ::before {
-	background-image: url('../../assets/Ellipse.svg');
+.aboutActive {
+	display: flex;
+	height: 24px;
+	align-items: center;
+	gap: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+.aboutActive::after {
+	content: '';
 	width: 6px;
 	height: 6px;
-	color: rgb(203, 0, 0);
-	cursor: default;
+	background-image: url('../../assets/Ellipse.svg');
+	background-repeat: no-repeat;
+}
+
+.aboutActive.text {
+	font-weight: 500;
+	font-size: 14px;
+	color: black;
 }

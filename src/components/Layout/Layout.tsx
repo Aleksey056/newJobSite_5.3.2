@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router'
+import { Outlet } from 'react-router'
 import Header from '../Header/Header'
 
 const Layout = () => {
@@ -7,9 +7,6 @@ const Layout = () => {
 			<Header />
 			<Outlet />
 		</>
-
-		// <NavLink to=''></NavLink>
-		// <NavLink></NavLink>
 	)
 
 }

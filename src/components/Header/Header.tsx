@@ -10,24 +10,24 @@ export default function Header() {
 	return (
 		<Box className={styles.header}>
 			<Box>
-				<Box className={styles.header__logo}>
-					<Image className={styles.header__icon} src={logo} alt='logo' />
-					<Text className={styles.text}>
+				<Box className={styles.header_logo}>
+					<Image className={styles.header_icon} src={logo} alt='logo' />
+					<Text className={styles.header_text}>
 						.FrontEnd
 					</Text>
 				</Box>
 			</Box>
-			<Box className={styles.block2}>
-				<Box className={styles.jobs}>
-					<NavLink to='/' className={styles.jobs__text}>
+			<Box className={styles.header_info}>
+				<NavLink to='/vacancies' className={({ isActive }) => isActive ? `${styles.vacanciesActive}` : `${styles.vacancies}`}>
+					<Text className={styles.text}>
 						Вакансии FE
-					</NavLink>
-					<Image className={styles.ellipse} />
-				</Box>
-				<Box className={styles.userInfo}>
-					<Image className={styles.userInfo__image} src={userLogo} alt='userLogo' />
-					<NavLink to='/about' className={styles.userInfo__text}>Обо мне</NavLink>
-				</Box>
+					</Text>
+
+				</NavLink>
+				<NavLink to='/about' className={({ isActive }) => isActive ? `${styles.aboutActive}` : `${styles.about}`}>
+					<Image className={styles.image} src={userLogo} alt='userLogo' />
+					<Text className={styles.text}>Обо мне</Text>
+				</NavLink>
 			</Box>
 		</Box>
 	)
