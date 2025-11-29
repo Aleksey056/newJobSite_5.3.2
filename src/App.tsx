@@ -1,7 +1,6 @@
 import './App.css'
 import '@mantine/core/styles.css';
-// import Header from './components/Header/Header'
-import { Route, Routes } from 'react-router';
+import { Navigate, Route, Routes } from 'react-router';
 import VacancyPage from './components/VacancyPage/VacancyPage';
 import HomePage from './components/HomePage/HomePage';
 import ErrorPage from './components/ErrorPage/ErrorPage';
@@ -13,9 +12,8 @@ function App() {
 		<>
 			<Routes>
 				<Route path='/' element={<Layout />}>
-					{/* <Route index element={<HomePage />} /> */}
-					<Route index element={<HomePage city='1' />} />
-					{/* <Route path='vacancies/moscow' element={<HomePage city='1' />} /> */}
+					<Route index element={<Navigate to='vacancies' replace />} />
+					<Route path='vacancies' element={<HomePage />} />
 					<Route path='vacancies/petersburg' element={<HomePage city='2' />} />
 					<Route path='vacancies/orenburg' element={<HomePage city='70' />} />
 					<Route path='vacancies/:id' element={<VacancyPage />} />
