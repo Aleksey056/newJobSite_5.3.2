@@ -19,7 +19,7 @@ function App() {
 					<Route path='vacancies/orenburg' element={<HomePage city='70' />} />
 					<Route path='vacancies/:id' element={<VacancyPage />} />
 					<Route path='about' element={<About />} />
-					<Route path='/*' element={<ErrorPage />} />
+					<Route path='*' element={<ErrorPage />} />
 				</Route>
 			</Routes>
 		</>
